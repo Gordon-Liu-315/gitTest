@@ -1,0 +1,16 @@
+require.config({
+    paths:{
+        jquery:"jquery-1.11.3",
+        "jquery-cookie":"jquery.cookie",
+        tabControl:"tabControl",
+    },
+    shim:{
+        "jquery-cookie":["jquery"],
+    }
+})
+require(["tabControl"],function(tabControl){
+    tabControl.fade();
+    tabControl.selectCard();
+    tabControl.slideshow();
+    tabControl.sidewindow();
+})
