@@ -12,4 +12,9 @@ require(["details"],function(details){
     details.fade();
     details.selectCard();
     details.sidewindow();
+    details.changeLevel();
+    details.bigglass();
+    details.allocation();
+    details.pay();
+    details.help();
 })

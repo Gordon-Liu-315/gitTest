@@ -6,7 +6,7 @@ define(["jquery","jquery-cookie"],function($){
             lis.hover(function(){
                 $(this).children("div").stop(true).fadeIn(300);
             },function(){
-                $(this).children("div").stop(true).fadeOut(300);
+                $(this).children("div").stop(true).fadeOut(0);
             })
     }
     //侧边栏选项卡
@@ -75,9 +75,93 @@ define(["jquery","jquery-cookie"],function($){
             },500)
         })
     }    
+    //点击换图
+    function changeLevel(){
+        var lis = $("#details-le-ul li");
+        var box = $("#details-le-box-img");
+        var show = $("#details-le-box-show img");
+        lis.click(function(){
+            var lin = $(this).find("img").attr("src");
+            box.attr("src",lin);
+            show.attr("src",lin);
+        })
+    }
+    //放大镜
+    function bigglass(){
+        var mark = $("#details-le-box-mark");
+        var box = $("#details-le-box");
+        var show = $("#details-le-box-show");
+        var img = $("#details-le-box-show img")
+        box.on({
+            mouseenter:function(){
+                mark.css("display","block");
+                show.css("display","block");
+            },
+            mousemove:function(e){
+                var l = e.pageX - box.offset().left - 95;
+                var t = e.pageY - box.offset().top - 95;
+                console.log(box.offset().top);
+                l = Math.min(l,190);
+                l = Math.max(l,0);
+                t = Math.min(t,190);
+                t = Math.max(t,0);
+                mark.css({
+                    left:l,
+                    top:t
+                })
+                img.css({
+                    left:l * -2,
+                    top:t * -2
+                })
+            },
+            mouseleave:function(){
+                mark.css("display","none");
+                show.css("display","none");
+            }
+        })
+
+    }
+    //配置选项
+    function allocation(){
+        var ps = $(".details-cen-allocation-con p");
+        var icons = $(".details-cen-allocation-con p .iconfont")
+        ps.on({
+            mouseenter:function(){
+							icons.eq($(this).index()).css("display","block");
+						},
+						mouseleave:function(){
+							icons.eq($(this).index()).css("display","none");
+						}
+        })
+		}
+		//服务选项
+		function help(){
+			var ps = $(".details-cen-help p");
+			var icons = $(".helps");
+			ps.click(function(){
+				icons.css("display","none");
+				ps.attr("class","");
+				icons.eq($(this).index()-1).css("display","block");
+				$(this).attr("class","active-p");
+			})
+		}
+		//分期选项
+		function pay(){
+			var imgs = $(".details-cen-pay img");
+			var uls = $(".uls");
+			imgs.on("click",function(){
+				uls.css("display","none");
+				uls.eq($(this).index()-1).css("display","block");
+			})
+		}
     return{
         fade:fade,
         selectCard:selectCard,
         sidewindow:sidewindow,
+        changeLevel:changeLevel,
+        bigglass:bigglass,
+				allocation:allocation,
+				pay:pay,
+				help:help,
     }
 })

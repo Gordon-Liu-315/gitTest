@@ -374,7 +374,92 @@ body {
         position: absolute;
         font-size: 14px;
         right: 6px;
-        top: 4px; }
+        top: 4px;
+        cursor: pointer; }
+
+/*search allproducts*/
+#search-allproducts p:first-child {
+  padding-left: 300px;
+  height: 30px;
+  line-height: 30px;
+  background: #dbdbdb;
+  display: none; }
+  #search-allproducts p:first-child a {
+    font-size: 12px;
+    color: #0084C4; }
+
+#search-allproducts p:nth-child(2) {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-left: 210px;
+  display: none; }
+
+#search-allproducts #search-allproducts-con {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap; }
+  #search-allproducts #search-allproducts-con #search-allproducts-product {
+    width: 266px;
+    margin: 50px 0;
+    border: 1px solid #fff;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center; }
+    #search-allproducts #search-allproducts-con #search-allproducts-product:hover {
+      border: 1px solid #999; }
+    #search-allproducts #search-allproducts-con #search-allproducts-product img {
+      width: 236px;
+      height: 180px;
+      margin-top: 20px; }
+    #search-allproducts #search-allproducts-con #search-allproducts-product h3 {
+      font-size: 14px;
+      color: #0084C4;
+      height: 50px;
+      line-height: 50px; }
+    #search-allproducts #search-allproducts-con #search-allproducts-product a {
+      color: #444444;
+      font-size: 14px;
+      line-height: 20px;
+      height: 50px;
+      width: 230px; }
+    #search-allproducts #search-allproducts-con #search-allproducts-product b {
+      font-size: 12px;
+      color: #888;
+      line-height: 20px;
+      height: 50px;
+      width: 230px; }
+    #search-allproducts #search-allproducts-con #search-allproducts-product #search-allproducts-product-pay {
+      width: 266px;
+      margin-bottom: 20px; }
+      #search-allproducts #search-allproducts-con #search-allproducts-product #search-allproducts-product-pay del {
+        font-size: 12px;
+        color: #555;
+        display: block;
+        margin-left: 20px; }
+      #search-allproducts #search-allproducts-con #search-allproducts-product #search-allproducts-product-pay span {
+        font-size: 20px;
+        color: #ce1126;
+        margin-left: 20px; }
+      #search-allproducts #search-allproducts-con #search-allproducts-product #search-allproducts-product-pay button {
+        width: 88px;
+        height: 32px;
+        background: #0084C4;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-left: 80px; }
+
+#search-allproducts p:last-child {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  margin-left: 210px;
+  display: none; }
 
 /*banner*/
 #banner {

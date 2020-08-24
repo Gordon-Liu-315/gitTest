@@ -13,4 +13,6 @@ require(["tabControl"],function(tabControl){
     tabControl.selectCard();
     tabControl.slideshow();
     tabControl.sidewindow();
+    tabControl.homedata();
+    tabControl.supersearch();
 })

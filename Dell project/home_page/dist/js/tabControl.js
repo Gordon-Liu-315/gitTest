@@ -6,7 +6,7 @@ define(["jquery"],function($){
         lis.hover(function(){
             $(this).children("div").stop(true).fadeIn(300);
         },function(){
-            $(this).children("div").stop(true).fadeOut(300);
+            $(this).children("div").stop(true).fadeOut(0);
         })
     }
     //侧边栏选项卡
@@ -74,12 +74,12 @@ define(["jquery"],function($){
                 timer = setInterval(function(){
                     inow++;
                     move();
-                },2000);
+                },5000);
 						})
 						timer = setInterval(function(){
 								inow++;
 								move();
-						},2000);
+						},5000);
 					lis.click(function(){
 							inow = $(this).index();
 							move();
@@ -89,7 +89,7 @@ define(["jquery"],function($){
             if(inow == lis.size()){
                 lis.eq(0).addClass("banner-ul-point-active");
             }
-            ul.animate({left:-200 + (- 1920 * inow)},1000,function(){
+            ul.animate({left:-200 + (-1920 * inow)},500,function(){
                 if(inow == lis.size()){
                     inow = 0;
                     ul.css("left",-200);
@@ -97,8 +97,8 @@ define(["jquery"],function($){
             })
         }
     }
-		//侧边弹出窗
-		function sidewindow(){
+	//侧边弹出窗
+	function sidewindow(){
 			var win = $("#side");
 			var btn = $("#side-btn");
 			var remove = $(".side-remove");
@@ -112,11 +112,94 @@ define(["jquery"],function($){
 					right:-302,
 				},500)
 			})
+    }
+    //首页搜索数据
+    function homedata(){
+			var inp = $(".nav-center-search-inp");
+			var search = $(".nav-center-search-inp-icon");
+			var allcon = $("#search-allproducts").nextUntil("#help");
+			$(document).keyup(function(event){  
+				if(event.keyCode==13){  
+				 search.trigger("click");
+				}  
+			 });
+			search.click(function(){
+				$("#search-allproducts p").css("display","block");
+				allcon.css("display","none");
+				var value = inp.val();
+				$.get("../data/data.json",function(arr){
+					let str = ``;
+					let num = 0;
+					for(let i = 0; i < arr.length; i++){
+						var strname = JSON.stringify(arr[i].name);
+						var index = strname.indexOf(value,0);
+						if(index >= 0){
+							num += index/index;
+							str += 
+							`	
+							<div id = "search-allproducts-product">
+									<img src="${arr[i].img}" alt="">
+									<h3>${arr[i].name}</h3>
+									<a href="">${arr[i].style}</a>
+									<b>${arr[i].type}</b>
+									<div id = "search-allproducts-product-pay">
+										<del>${arr[i].oldprice}</del>
+										<span>${arr[i].newprice}</span>
+										<button class="${arr[i].id}">立即购买</button>
+									</div>
+								</div>
+							`
+						}
+						if(!value){
+							num = 40;
+						}
+					}
+					$("#search-allproducts-con").html(str);
+					$(".search-allproducts-num").html(num);
+				})
+			})
+		}
+		//首页高级搜索数据
+		function supersearch(){
+			var btn = $("#search-center-btn");
+			var money = $("#search-center-money").val();
+			var size = $("#search-center-size").val();
+			var processor = $("#search-center-processor").val();
+			btn.click(function(){
+				$.get("../data/data.json",function(arr){
+					let string = ``;
+					for(var i = 0; i < arr.length; i++){
+						var str = JSON.stringify(arr[i]);
+						var moneyin = str.indexOf(money,0);
+						var sizein = str.indexOf(size,0);
+						var processorin = str.indexOf(processor,0);
+						if( sizein >= 0 && processorin >= 0){
+							string +=
+							`
+							<div id = "search-allproducts-product">
+									<img src="${arr[i].img}" alt="">
+									<h3>${arr[i].name}</h3>
+									<a href="">${arr[i].style}</a>
+									<b>${arr[i].type}</b>
+									<div id = "search-allproducts-product-pay">
+										<del>${arr[i].oldprice}</del>
+										<span>${arr[i].newprice}</span>
+										<button class="${arr[i].id}">立即购买</button>
+									</div>
+								</div>
+							`
+						}
+					}
+					$("#search-allproducts-con").html(string);
+				})
+			})
 		}
     return {
-        fade:fade,
-        selectCard:selectCard,
-				slideshow:slideshow,
-				sidewindow:sidewindow,
+      fade:fade,
+      selectCard:selectCard,
+			slideshow:slideshow,
+      sidewindow:sidewindow,
+			homedata:homedata,
+			supersearch:supersearch,
     }
 })

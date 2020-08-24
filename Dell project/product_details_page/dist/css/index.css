@@ -56,12 +56,11 @@ img {
 @font-face {
   font-family: 'iconfont';
   /* project id 2015980 */
-  src: url("//at.alicdn.com/t/font_2015980_kx5f78rm9x.eot");
-  src: url("//at.alicdn.com/t/font_2015980_kx5f78rm9x.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2015980_kx5f78rm9x.woff2") format("woff2"), url("//at.alicdn.com/t/font_2015980_kx5f78rm9x.woff") format("woff"), url("//at.alicdn.com/t/font_2015980_kx5f78rm9x.ttf") format("truetype"), url("//at.alicdn.com/t/font_2015980_kx5f78rm9x.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_2015980_350gishh6uo.eot");
+  src: url("//at.alicdn.com/t/font_2015980_350gishh6uo.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.woff2") format("woff2"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.woff") format("woff"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.ttf") format("truetype"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont";
-  /* font-size:16px; */
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
@@ -440,7 +439,8 @@ body {
 
 /*minTitle*/
 #minTitle {
-  background: #d6d5d5; }
+  background: #d6d5d5;
+  margin-bottom: 30px; }
   #minTitle #minTitle-center {
     width: 965px;
     margin: 0 auto;
@@ -460,3 +460,320 @@ body {
         margin: 0 5px; }
 
 /*details-page*/
+#details {
+  height: 690px;
+  width: 965px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  #details #details-le {
+    width: 382px;
+    height: 690px;
+    position: relative; }
+    #details #details-le #details-le-box {
+      width: 380px;
+      height: 380px;
+      border: 1px solid #999; }
+      #details #details-le #details-le-box img {
+        width: 100%;
+        height: 100%; }
+      #details #details-le #details-le-box #details-le-box-mark {
+        width: 190px;
+        height: 190px;
+        background: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none; }
+    #details #details-le #details-le-box-show {
+      position: absolute;
+      top: 0;
+      left: 392px;
+      width: 380px;
+      height: 380px;
+      border: 1px solid #999;
+      overflow: hidden;
+      z-index: 2;
+      display: none; }
+      #details #details-le #details-le-box-show img {
+        width: 200%;
+        height: 200%;
+        position: absolute; }
+    #details #details-le #details-le-ul {
+      width: 382px; }
+      #details #details-le #details-le-ul li {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin: 7px;
+        border: 1px solid #999;
+        cursor: pointer;
+        padding: 5px; }
+        #details #details-le #details-le-ul li img {
+          width: 100%;
+          height: 100%; }
+    #details #details-le #details-le-icon {
+      font-size: 12px;
+      position: absolute;
+      bottom: 210px;
+      right: 0; }
+      #details #details-le #details-le-icon .iconfont {
+        color: #0085c3;
+        font-size: 12px;
+        margin-right: 10px; }
+  #details #details-cen {
+    width: 360px; }
+    #details #details-cen h2 {
+      font-size: 18.1px;
+      color: #444;
+      font-weight: bold;
+      height: 48px;
+      line-height: 24px; }
+    #details #details-cen span {
+      font-size: 12px;
+      color: #888;
+      line-height: 20px; }
+    #details #details-cen .details-cen-discounts {
+      font-size: 14px;
+      color: #ce1126;
+      line-height: 20px; }
+    #details #details-cen .details-cen-price {
+      width: 360px;
+      height: 60px;
+      background: #eeeeee;
+      padding: 10px 0 10px 10px;
+      margin-top: 10px; }
+      #details #details-cen .details-cen-price del {
+        font-size: 12px;
+        color: black;
+        display: block; }
+      #details #details-cen .details-cen-price .details-cen-price-cen {
+        display: flex;
+        align-items: center; }
+        #details #details-cen .details-cen-price .details-cen-price-cen p:nth-child(2) {
+          font-size: 28px;
+          color: #ce1126;
+          font-weight: bold;
+          margin: 0 20px 0 10px; }
+        #details #details-cen .details-cen-price .details-cen-price-cen p:nth-child(4) {
+          font-size: 12px;
+          color: black;
+          margin-left: 5px;
+          margin-bottom: 8px; }
+      #details #details-cen .details-cen-price p {
+        color: #ce1126;
+        font-size: 12px;
+        margin-top: 8px; }
+    #details #details-cen .details-cen-allocation {
+      margin-top: 10px;
+      display: flex;
+      height: 150px; }
+      #details #details-cen .details-cen-allocation .details-cen-allocation-con {
+        margin-left: 10px; }
+        #details #details-cen .details-cen-allocation .details-cen-allocation-con p {
+          font-size: 12px;
+          border: 1px solid #999;
+          padding: 8px 5px;
+          position: relative;
+          margin: 5px 0; }
+          #details #details-cen .details-cen-allocation .details-cen-allocation-con p b {
+            color: #ce1126;
+            font-weight: bold; }
+          #details #details-cen .details-cen-allocation .details-cen-allocation-con p:hover {
+            border: 2px solid #ce1126;
+            padding: 7.2px 4px;
+            cursor: pointer; }
+          #details #details-cen .details-cen-allocation .details-cen-allocation-con p .iconfont {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #ce1126;
+            display: none; }
+    #details #details-cen .details-cen-gift {
+      display: flex;
+      align-items: center;
+      margin-top: 4px; }
+      #details #details-cen .details-cen-gift span {
+        margin-right: 10px; }
+      #details #details-cen .details-cen-gift p {
+        font-size: 12px;
+        border: 1px solid #999;
+        padding: 8px 5px;
+        margin-left: 10px;
+        cursor: pointer; }
+    #details #details-cen .details-cen-help {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      height: 18px; }
+      #details #details-cen .details-cen-help span {
+        margin-right: 10px; }
+      #details #details-cen .details-cen-help p {
+        font-size: 12px;
+        border: 1px solid #999;
+        padding: 8px 5px;
+        margin-left: 10px;
+        position: relative;
+        cursor: pointer; }
+        #details #details-cen .details-cen-help p .iconfont {
+          color: #ce1126;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          display: none; }
+      #details #details-cen .details-cen-help .active-p {
+        border: 2px solid #ce1126;
+        margin-left: 9px; }
+    #details #details-cen .details-cen-pay {
+      display: flex;
+      align-items: center;
+      margin-top: 15px; }
+      #details #details-cen .details-cen-pay span {
+        margin-right: 10px; }
+      #details #details-cen .details-cen-pay img {
+        width: 120px;
+        height: 35px;
+        margin-left: 5px;
+        cursor: pointer; }
+    #details #details-cen .details-cen-money1 {
+      margin-top: 10px;
+      margin-left: 14px;
+      width: 300px;
+      position: relative;
+      height: 50px;
+      border: 1px solid #999;
+      float: left;
+      border-radius: 5px;
+      background: #fff;
+      padding: 2px; }
+      #details #details-cen .details-cen-money1 .iconfontttt {
+        position: absolute;
+        display: block;
+        background: #fff;
+        border-left: 1px solid #999;
+        border-top: 1px solid #999;
+        width: 12px;
+        height: 12px;
+        transform: rotate(45deg);
+        top: -8px;
+        left: 92px;
+        color: normal;
+        font-size: 10px; }
+      #details #details-cen .details-cen-money1 li {
+        float: left;
+        width: 90px;
+        font-size: 12px;
+        border: 1px solid #999;
+        height: 40px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 4px 4px;
+        border-radius: 2px; }
+    #details #details-cen .details-cen-money2 {
+      margin-top: 10px;
+      margin-left: 14px;
+      width: 300px;
+      position: relative;
+      height: 50px;
+      border: 1px solid #999;
+      float: left;
+      border-radius: 5px;
+      background: #fff;
+      display: none;
+      padding: 2px; }
+      #details #details-cen .details-cen-money2 .iconfontttt {
+        position: absolute;
+        display: block;
+        background: #fff;
+        border-left: 1px solid #999;
+        border-top: 1px solid #999;
+        width: 12px;
+        height: 12px;
+        transform: rotate(45deg);
+        top: -8px;
+        left: 192px;
+        color: normal;
+        font-size: 10px; }
+      #details #details-cen .details-cen-money2 li {
+        float: left;
+        width: 90px;
+        font-size: 12px;
+        border: 1px solid #999;
+        height: 40px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 4px 4px;
+        border-radius: 2px; }
+    #details #details-cen .details-cen-count {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      width: 360px;
+      height: 50px; }
+      #details #details-cen .details-cen-count span:first-child {
+        margin-right: 40px; }
+      #details #details-cen .details-cen-count span:last-child {
+        margin-left: 25px; }
+      #details #details-cen .details-cen-count button {
+        width: 40px;
+        height: 31px;
+        border: none;
+        background: #e4e4e4;
+        cursor: pointer; }
+      #details #details-cen .details-cen-count p {
+        width: 38px;
+        height: 29px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+    #details #details-cen .details-cen-btn {
+      margin-top: 20px; }
+      #details #details-cen .details-cen-btn button:first-child {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background: #56a025;
+        color: white;
+        cursor: pointer; }
+      #details #details-cen .details-cen-btn button:last-child {
+        width: 170px;
+        height: 40px;
+        border: none;
+        background: #0085c3;
+        color: white;
+        margin-left: 15px;
+        cursor: pointer; }
+  #details #details-ri {
+    width: 178px;
+    border: 1px solid #999;
+    height: 634px; }
+    #details #details-ri #details-ri-top {
+      width: 178px;
+      background: #dddddd;
+      height: 25px;
+      display: block;
+      font-size: 12px;
+      color: #0085c3;
+      line-height: 25px;
+      text-align: center; }
+    #details #details-ri ul {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
+      #details #details-ri ul li {
+        text-align: center;
+        font-size: 12px;
+        color: #888;
+        width: 160px;
+        line-height: 17px;
+        margin-top: 20px; }
+        #details #details-ri ul li img {
+          width: 150px; }
+        #details #details-ri ul li p {
+          color: #ce1126; }
+        #details #details-ri ul li a {
+          color: #888; }
