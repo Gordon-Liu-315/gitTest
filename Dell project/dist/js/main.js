@@ -1,0 +1,32 @@
+require.config({
+    paths:{
+        jquery:"jquery-1.11.3",
+        "jquery-cookie":"jquery.cookie",
+        home:"home_page",
+        details:"product_details_page",
+        shopping:"shopping_cart",
+    },
+    shim:{
+        "jquery-cookie":["jquery"],
+    }
+})
+require(["home","details","shopping"],function(home,details,shopping){
+    home.fade();
+    home.selectCard();
+    home.slideshow();
+    home.sidewindow();
+    home.homedata();
+    details.fade();
+    details.selectCard();
+    details.sidewindow();
+    details.changeLevel();
+    details.bigglass();
+    details.allocation();
+    details.pay();
+    details.help();
+    details.homedata();
+    shopping.fade();
+    shopping.selectCard();
+    shopping.sidewindow();
+    shopping.homedata();
+})
