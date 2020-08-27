@@ -56,8 +56,8 @@ img {
 @font-face {
   font-family: 'iconfont';
   /* project id 2015980 */
-  src: url("//at.alicdn.com/t/font_2015980_350gishh6uo.eot");
-  src: url("//at.alicdn.com/t/font_2015980_350gishh6uo.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.woff2") format("woff2"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.woff") format("woff"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.ttf") format("truetype"), url("//at.alicdn.com/t/font_2015980_350gishh6uo.svg#iconfont") format("svg"); }
+  src: url("//at.alicdn.com/t/font_2015980_wjprcgjtu0p.eot");
+  src: url("//at.alicdn.com/t/font_2015980_wjprcgjtu0p.eot?#iefix") format("embedded-opentype"), url("//at.alicdn.com/t/font_2015980_wjprcgjtu0p.woff2") format("woff2"), url("//at.alicdn.com/t/font_2015980_wjprcgjtu0p.woff") format("woff"), url("//at.alicdn.com/t/font_2015980_wjprcgjtu0p.ttf") format("truetype"), url("//at.alicdn.com/t/font_2015980_wjprcgjtu0p.svg#iconfont") format("svg"); }
 
 .iconfont {
   font-family: "iconfont";
@@ -528,488 +528,120 @@ body {
     border: none;
     margin-left: 15px; }
 
-/*new zone*/
-#newZone #newZone-center {
+/*product zone*/
+#newzone {
   width: 1147px;
   margin: 0 auto; }
-  #newZone #newZone-center #newZone-center-products {
-    width: 1147px; }
-    #newZone #newZone-center #newZone-center-products #newZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #newZone #newZone-center #newZone-center-products #newZone-center-product:hover {
-        border-color: #999; }
-      #newZone #newZone-center #newZone-center-products #newZone-center-product #newZone-center-product-a img {
-        margin-left: 15px; }
-      #newZone #newZone-center #newZone-center-products #newZone-center-product p {
-        font-size: 14px;
-        color: #0085c3;
-        height: 20px;
-        line-height: 20px;
-        margin-top: 10px; }
-      #newZone #newZone-center #newZone-center-products #newZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #newZone #newZone-center #newZone-center-products #newZone-center-product span {
-        font-size: 12px;
-        color: #888;
-        line-height: 18px;
-        height: 18px;
-        padding: 2px 0;
-        display: block; }
-      #newZone #newZone-center #newZone-center-products #newZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #newZone #newZone-center #newZone-center-products #newZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #newZone #newZone-center #newZone-center-products #newZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #newZone #newZone-center #newZone-center-products #newZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
 
-/*hot zone*/
-#hotZone #hotZone-center {
+/*product*/
+#product {
   width: 1147px;
-  margin: 0 auto; }
-  #hotZone #hotZone-center #hotZone-center-products {
-    width: 1147px; }
-    #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product {
-      height: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap; }
+  #product #product-zone {
+    height: 340px;
+    width: 255px;
+    padding: 10px 14px;
+    border: 1px solid #fff; }
+    #product #product-zone:hover {
+      border-color: #999; }
+    #product #product-zone #product-zone-a img {
+      margin-left: 15px; }
+    #product #product-zone p {
+      font-size: 14px;
+      color: #0085c3;
+      height: 20px;
       width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product:hover {
-        border-color: #999; }
-      #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product #hotZone-center-product-a img {
-        margin-left: 15px; }
-      #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product p {
+      line-height: 20px;
+      margin-top: 10px; }
+    #product #product-zone b {
+      font-size: 14px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      width: 240px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    #product #product-zone span {
+      font-size: 12px;
+      color: #888;
+      line-height: 18px;
+      height: 18px;
+      padding: 2px 0;
+      display: block; }
+    #product #product-zone div {
+      margin-top: 20px;
+      position: relative; }
+      #product #product-zone div del {
         font-size: 14px;
-        color: #0085c3;
-        height: 20px;
-        line-height: 20px;
-        margin-top: 10px; }
-      #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product b {
+        color: black;
+        font-weight: 500; }
+      #product #product-zone div p {
+        color: #ce1126;
+        font-size: 27px;
+        font-weight: bold; }
+      #product #product-zone div a {
+        display: inline-block;
+        margin-left: 100px;
+        width: 88px;
+        height: 32px;
+        background: #0085c3;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        position: absolute;
+        right: 0;
+        bottom: 0; }
+  #product #displayZone {
+    height: 340px;
+    width: 255px;
+    float: left;
+    padding: 10px 14px;
+    border: 1px solid #fff; }
+    #product #displayZone:hover {
+      border-color: #999; }
+    #product #displayZone #displayZone-a {
+      display: block;
+      width: 230px;
+      height: 230px; }
+      #product #displayZone #displayZone-a img {
+        margin-left: 15px;
+        width: 100%;
+        height: 100%; }
+    #product #displayZone b {
+      font-size: 14px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      width: 240px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    #product #displayZone div {
+      margin-top: 20px;
+      position: relative; }
+      #product #displayZone div del {
         font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product span {
-        font-size: 12px;
-        color: #888;
-        line-height: 18px;
-        height: 18px;
-        padding: 2px 0;
-        display: block; }
-      #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #hotZone #hotZone-center #hotZone-center-products #hotZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-
-/*XPS zone*/
-#XPSZone #XPSZone-center {
-  width: 1147px;
-  margin: 0 auto; }
-  #XPSZone #XPSZone-center #XPSZone-center-products {
-    width: 1147px; }
-    #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product:hover {
-        border-color: #999; }
-      #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product #XPSZone-center-product-a img {
-        margin-left: 15px; }
-      #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product p {
-        font-size: 14px;
-        color: #0085c3;
-        height: 20px;
-        line-height: 20px;
-        margin-top: 10px; }
-      #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product span {
-        font-size: 12px;
-        color: #888;
-        line-height: 18px;
-        height: 18px;
-        padding: 2px 0;
-        display: block; }
-      #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #XPSZone #XPSZone-center #XPSZone-center-products #XPSZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-
-/*game zone*/
-#gameZone #gameZone-center {
-  width: 1147px;
-  margin: 0 auto; }
-  #gameZone #gameZone-center #gameZone-center-products {
-    width: 1147px; }
-    #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product:hover {
-        border-color: #999; }
-      #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product #gameZone-center-product-a img {
-        margin-left: 15px; }
-      #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product p {
-        font-size: 14px;
-        color: #0085c3;
-        height: 20px;
-        line-height: 20px;
-        margin-top: 10px; }
-      #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product span {
-        font-size: 12px;
-        color: #888;
-        line-height: 18px;
-        height: 18px;
-        padding: 2px 0;
-        display: block; }
-      #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #gameZone #gameZone-center #gameZone-center-products #gameZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-
-/*UItrazone*/
-#UItrabookZone #UItrabookZone-center {
-  width: 1147px;
-  margin: 0 auto; }
-  #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products {
-    width: 1147px; }
-    #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product:hover {
-        border-color: #999; }
-      #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product #UItrabookZone-center-product-a img {
-        margin-left: 15px; }
-      #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product p {
-        font-size: 14px;
-        color: #0085c3;
-        height: 20px;
-        line-height: 20px;
-        margin-top: 10px; }
-      #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product span {
-        font-size: 12px;
-        color: #888;
-        line-height: 18px;
-        height: 18px;
-        padding: 2px 0;
-        display: block; }
-      #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #UItrabookZone #UItrabookZone-center #UItrabookZone-center-products #UItrabookZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-
-/*ETzone*/
-#ETZone #ETZone-center {
-  width: 1147px;
-  margin: 0 auto; }
-  #ETZone #ETZone-center #ETZone-center-products {
-    width: 1147px; }
-    #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product:hover {
-        border-color: #999; }
-      #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product #ETZone-center-product-a img {
-        margin-left: 15px; }
-      #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product p {
-        font-size: 14px;
-        color: #0085c3;
-        height: 20px;
-        line-height: 20px;
-        margin-top: 10px; }
-      #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product span {
-        font-size: 12px;
-        color: #888;
-        line-height: 18px;
-        height: 18px;
-        padding: 2px 0;
-        display: block; }
-      #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #ETZone #ETZone-center #ETZone-center-products #ETZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-
-/*displayzone*/
-#displayZone #displayZone-center {
-  width: 1147px;
-  margin: 0 auto; }
-  #displayZone #displayZone-center #displayZone-center-products {
-    width: 1147px; }
-    #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product:hover {
-        border-color: #999; }
-      #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product #displayZone-center-product-a {
-        display: block;
-        width: 230px;
-        height: 230px; }
-        #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product #displayZone-center-product-a img {
-          margin-left: 15px;
-          width: 100%;
-          height: 100%; }
-      #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #displayZone #displayZone-center #displayZone-center-products #displayZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-
-/*partszone*/
-#partsZone #partsZone-center {
-  width: 1147px;
-  margin: 0 auto; }
-  #partsZone #partsZone-center #partsZone-center-products {
-    width: 1147px;
-    height: 700px; }
-    #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product {
-      height: 340px;
-      width: 255px;
-      float: left;
-      padding: 10px 14px;
-      border: 1px solid #fff; }
-      #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product:hover {
-        border-color: #999; }
-      #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product #partsZone-center-product-a {
-        display: block;
-        width: 230px;
-        height: 230px; }
-        #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product #partsZone-center-product-a img {
-          margin-left: 15px;
-          width: 100%;
-          height: 100%; }
-      #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product b {
-        font-size: 14px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        width: 240px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product div {
-        margin-top: 20px;
-        position: relative; }
-        #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product div del {
-          font-size: 14px;
-          color: black;
-          font-weight: 500; }
-        #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product div p {
-          color: #ce1126;
-          font-size: 27px;
-          font-weight: bold; }
-        #partsZone #partsZone-center #partsZone-center-products #partsZone-center-product div a {
-          display: inline-block;
-          margin-left: 100px;
-          width: 88px;
-          height: 32px;
-          background: #0085c3;
-          color: white;
-          text-align: center;
-          line-height: 32px;
-          position: absolute;
-          right: 0;
-          bottom: 0; }
+        color: black;
+        font-weight: 500; }
+      #product #displayZone div p {
+        color: #ce1126;
+        font-size: 27px;
+        font-weight: bold; }
+      #product #displayZone div a {
+        display: inline-block;
+        margin-left: 100px;
+        width: 88px;
+        height: 32px;
+        background: #0085c3;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        position: absolute;
+        right: 0;
+        bottom: 0; }
 
 /*help*/
 #help {
@@ -1162,3 +794,72 @@ body {
       font-size: 14px;
       color: #0085c3;
       line-height: 50px; }
+
+/*register*/
+#register {
+  z-index: 1000;
+  width: 650px;
+  height: 400px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: #fff; }
+  #register #register-img {
+    width: 310px;
+    height: 400px;
+    float: left; }
+    #register #register-img #register-img-img {
+      width: 100%;
+      height: 100%; }
+  #register #register-login {
+    width: 340px;
+    height: 400px;
+    float: left; }
+    #register #register-login #register-login-title {
+      width: 340px;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-bottom: 1px solid #999; }
+      #register #register-login #register-login-title .register-login-title-img {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px; }
+      #register #register-login #register-login-title h2 {
+        font-size: 16px;
+        color: #444; }
+      #register #register-login #register-login-title i {
+        font-size: 22px;
+        color: #999;
+        border: 1px solid #999;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        right: 5px; }
+    #register #register-login #register-login-login {
+      width: 340px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap; }
+      #register #register-login #register-login-login .register-login-login-phone {
+        width: 280px;
+        height: 35px;
+        outline: none; }
+      #register #register-login #register-login-login #register-login-login-block {
+        width: 280px;
+        height: 35px;
+        border: 1px solid #999; }
+        #register #register-login #register-login-login #register-login-login-block i {
+          width: 35px;
+          height: 35px; }
+    #register #register-login #register-login-foot {
+      width: 340px;
+      height: 70px; }

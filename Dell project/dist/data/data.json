@@ -4,336 +4,376 @@
 		"name":"十代标压处理器 高色域全面屏 16GB内存",
 		"style":"【2020新款】灵越7000 15.6英寸轻一代",
 		"type":"i5/Windows 10/16G/512G SSD/GTX1650Ti4GB显卡",
-		"oldprice":"￥9499",
-		"newprice":"￥8999",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594275470_4.jpg?image_01_1"
+		"oldprice":"9499",
+		"newprice":"8999",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594275470_4.jpg?image_01_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":1,
 		"name":"创作全面屏/物理防蓝光 1TB固态硬盘",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸全",
 		"type":"i7/Windows 10/16G/1T/GTX 1650TI 4GB显卡",
-		"oldprice":"￥17999",
-		"newprice":"￥17299",
-		"img":"//eshop.dell-brand.com/uploads/202008/1596682787_4.jpg?image_01_2"
+		"oldprice":"17999",
+		"newprice":"17299",
+		"img":"//eshop.dell-brand.com/uploads/202008/1596682787_4.jpg?image_01_2",
+		"location":"product_details_page2.html"
 	},
 	{
 		"id":2,
 		"name":"4K创作全面屏/物理防蓝光 十代标压i9处",
 		"style":"【2020新款】XPS 17(9700) 17英寸全面",
 		"type":"i9/Windows 10/32G/1T/RTX2060MQ 6G显卡",
-		"oldprice":"￥29999",
-		"newprice":"￥29499",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594259866_4.jpg?image_01_3"
+		"oldprice":"29999",
+		"newprice":"29499",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594259866_4.jpg?image_01_3",
+		"location":"product_details_page3.html"
 	},
 	{
 		"id":3,
 		"name":"创作全面屏/物理防蓝光 64GB 内存",
 		"style":"【2020新款】XPS 17(9700) 17英寸全面",
 		"type":"i9/Windows 10/M64G/H4T/RTX2060MQ 6G显卡",
-		"oldprice":"￥39999",
-		"newprice":"￥35499",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594259866_4.jpg?image_01_3"
+		"oldprice":"39999",
+		"newprice":"35499",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594259866_4.jpg?image_01_3",
+		"location":"product_details_page4.html"
 	},
 	{
 		"id":4,
 		"name":"十代i5 MX250独显 512GB纯固态",
 		"style":"灵越5000(5498) fit 14英寸轻薄本",
 		"type":"i5/Windows 10/8G/512G SSD/2G显卡",
-		"oldprice":"￥5999",
-		"newprice":"￥4599",
-		"img":"//eshop.dell-brand.com/uploads/201908/1566456586_4.jpg?image_L9_1"
+		"oldprice":"5999",
+		"newprice":"4599",
+		"img":"//eshop.dell-brand.com/uploads/201908/1566456586_4.jpg?image_L9_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":5,
 		"name":"酷睿i5 512GB纯固态 GTX 1650",
 		"style":"G3 15.6英寸专业级电竞本",
 		"type":"i5/Windows 10/8G/512G SSD/GTX 1650 4GB显卡",
-		"oldprice":"￥7099",
-		"newprice":"￥4799",
-		"img":"//eshop.dell-brand.com/uploads/201907/1564121772_4.jpg?image_L9_2"
+		"oldprice":"7099",
+		"newprice":"4799",
+		"img":"//eshop.dell-brand.com/uploads/201907/1564121772_4.jpg?image_L9_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":6,
 		"name":"十代i5 MX250独显 1TB纯固态",
 		"style":"灵越5000(5598) fit 15.6英寸轻薄本",
 		"type":"i5/Windows 10/8G/1T SSD/2G显卡",
-		"oldprice":"￥6499",
-		"newprice":"￥5299",
-		"img":"//eshop.dell-brand.com/uploads/201908/1567048005_4.jpg?image_L9_3"
+		"oldprice":"6499",
+		"newprice":"5299",
+		"img":"//eshop.dell-brand.com/uploads/201908/1567048005_4.jpg?image_L9_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":7,
 		"name":"十代i7 MX250独显 1TB纯固态",
 		"style":"灵越7000(7391) 13.3英寸轻一代合金本",
 		"type":"i7/Windows 10/8G/1T SSD/2G显卡",
-		"oldprice":"￥8999",
-		"newprice":"￥7599",
-		"img":"//eshop.dell-brand.com/uploads/201908/1566784975_4.png?image_L9_4"
+		"oldprice":"8999",
+		"newprice":"7599",
+		"img":"//eshop.dell-brand.com/uploads/201908/1566784975_4.png?image_L9_4",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":8,
 		"name":"全新十代i7 16G大内存 100%sRGB色域",
 		"style":"【2020新款】灵越7000(7501) 15.6英寸",
 		"type":"i7/Windows 10/16G/512G SSD/GTX 1650 4GB显卡",
-		"oldprice":"￥8999",
-		"newprice":"￥8099",
-		"img":"//eshop.dell-brand.com/uploads/202006/1591695576_4.jpg?image_L9_5"
+		"oldprice":"8999",
+		"newprice":"8099",
+		"img":"//eshop.dell-brand.com/uploads/202006/1591695576_4.jpg?image_L9_5",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":9,
 		"name":"十代i5 512SSD 碳纤维掌托",
 		"style":"XPS 13(7390) 13.3英寸超轻薄商务笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥11999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202006/1591065703_4.png?image_L9_6"
+		"oldprice":"11999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202006/1591065703_4.png?image_L9_6",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":10,
 		"name":"12区域RGB底盘光刃 RTX2060显卡",
 		"style":"【2020新款】G5 15.6英寸超感玩炫光",
 		"type":"i7/Windows 10/16G/512G SSD/RTX 2060 6GB显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8299",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589181023_4.jpg?image_L9_7"
+		"oldprice":"9999",
+		"newprice":"8299",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589181023_4.jpg?image_L9_7",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":11,
 		"name":"酷睿i5 512G纯固态 碳纤维材质",
 		"style":"XPS 15(7590) 15.6英寸创作笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/201906/1560910790_4.jpg?image_L9_8"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/201906/1560910790_4.jpg?image_L9_8",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":12,
 		"name":"创作全面屏/物理防蓝光 十代标压i5",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸轻薄本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/201906/1560910790_4.jpg?image_L4_1"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/201906/1560910790_4.jpg?image_L4_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":13,
 		"name":"4K+触控全面屏 10代CPU 1TB 纯固态",
 		"style":"【2020新款】XPS 13(9300) 13.4英寸笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594261556_4.jpg?image_L4_2"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594261556_4.jpg?image_L4_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":14,
 		"name":"4K创作全面屏/物理防蓝光 32GB内存",
 		"style":"【2020新款】XPS 17(9700) 17英寸轻薄本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594261818_4.jpg?image_L4_3"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594261818_4.jpg?image_L4_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":15,
 		"name":"酷睿i5 1T纯固态 OLED屏",
 		"style":"XPS 15(7590) 15.6英寸创作笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594259866_4.jpg?image_L4_4"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594259866_4.jpg?image_L4_4",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":16,
 		"name":"酷睿i5 1T纯固态 OLED屏",
 		"style":"XPS 15(7590) 15.6英寸创作笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/201907/1564121772_4.jpg?image_L3_1"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/201907/1564121772_4.jpg?image_L3_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":17,
 		"name":"酷睿i7 512GB纯固态 144Hz 72%色域",
 		"style":"XPS 15(7590) 15.6英寸创作笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589186226_4.jpg?image_L3_2"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589186226_4.jpg?image_L3_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":18,
 		"name":"4K+触控全面屏 10代CPU 1TB 纯固态",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202006/1592559121_4.jpg?image_L3_3"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202006/1592559121_4.jpg?image_L3_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":19,
 		"name":"4K创作全面屏/物理防蓝光 32GB内存",
 		"style":"【2020新款】XPS 17(9700) 17英寸",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202006/1592559121_4.jpg?image_L3_3"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202006/1592559121_4.jpg?image_L3_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":20,
 		"name":"512GB固态硬盘",
 		"style":"XPS 15(7590) 15.6英寸创作笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/201909/1569467800_4.jpg?image_L2_1"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/201909/1569467800_4.jpg?image_L2_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":21,
 		"name":"创作全面屏/物理防蓝光 十代标压i5",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202006/1591695533_4.jpg?image_L2_2"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202006/1591695533_4.jpg?image_L2_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":22,
 		"name":"4K+触控全面屏 10代CPU 1TB 纯固态 ",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202007/1594275430_4.jpg?image_L2_3"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202007/1594275430_4.jpg?image_L2_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":23,
 		"name":"碳纤维掌托 触控4K屏",
 		"style":"【2020新款】XPS 17(9700) 17英寸",
 		"type":"i7/Windows 10/32G/1T/RTX2060MQ 6G显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/201908/1564625039_4.jpg?image_L2_4"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/201908/1564625039_4.jpg?image_L2_4",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":24,
 		"name":"512GB固态硬盘",
 		"style":"XPS 15(7590) 15.6英寸创作笔记本",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589273232_4.jpg?image_L5_1"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589273232_4.jpg?image_L5_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":25,
 		"name":"创作全面屏/物理防蓝光 十代标压i5",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589273232_4.jpg?image_L5_1"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589273232_4.jpg?image_L5_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":26,
 		"name":"4K+触控全面屏 10代CPU 1TB 纯固态 ",
 		"style":"【2020新款】XPS 15(9500) 15.6英寸",
 		"type":"i5/Windows 10/8G/512G SSD/UHD显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589873790_4.jpg?image_L5_2"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589873790_4.jpg?image_L5_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":27,
 		"name":"碳纤维掌托 触控4K屏",
 		"style":"【2020新款】XPS 17(9700) 17英寸",
 		"type":"i7/Windows 10/32G/1T/RTX2060MQ 6G显卡",
-		"oldprice":"￥9999",
-		"newprice":"￥8499",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589357472_4.png?image_L5_3"
+		"oldprice":"9999",
+		"newprice":"8499",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589357472_4.png?image_L5_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":28,
 		"name":"戴尔32系列游戏显示器:S3220DGF",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202005/1589357472_4.png?image_L5_3"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202005/1589357472_4.png?image_L5_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":29,
 		"name":"戴尔UltraSharp27系列4K显示器:U2720QM",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215367_4.jpg?image_L6_1"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215367_4.jpg?image_L6_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":30,
 		"name":"外星人Alienware27系列显示器:AW2720HF",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215394_4.jpg?image_L6_2"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215394_4.jpg?image_L6_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":31,
 		"name":"外星人Alienware34系列显示器:AW3420DW",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215410_4.jpg?image_L6_3"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215410_4.jpg?image_L6_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":32,
 		"name":"戴尔32系列游戏显示器:S3220DGF",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215431_4.jpg?image_L6_4"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215431_4.jpg?image_L6_4",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":33,
 		"name":"戴尔UltraSharp27系列4K显示器:U2720QM",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215521_4.jpg?image_L7_1"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215521_4.jpg?image_L7_1",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":34,
 		"name":"外星人Alienware27系列显示器:AW2720HF",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215558_4.jpg?image_L7_2"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215558_4.jpg?image_L7_2",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":35,
 		"name":"外星人Alienware34系列显示器:AW3420DW",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215597_4.jpg?image_L7_3"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215597_4.jpg?image_L7_3",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":36,
 		"name":"戴尔32系列游戏显示器:S3220DGF",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215620_4.jpg?image_L7_4"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215620_4.jpg?image_L7_4",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":37,
 		"name":"戴尔UltraSharp27系列4K显示器:U2720QM",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215699_4.jpg?image_L7_5"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215699_4.jpg?image_L7_5",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":38,
 		"name":"外星人Alienware27系列显示器:AW2720HF",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215748_4.jpg?image_L7_7"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215748_4.jpg?image_L7_7",
+		"location":"product_details_page1.html"
 	},
 	{
 		"id":39,
 		"name":"外星人Alienware34系列显示器:AW3420DW",
-		"oldprice":"￥4999",
-		"newprice":"￥2899",
-		"img":"//eshop.dell-brand.com/uploads/202008/1597215774_4.jpg?image_L7_8"
+		"oldprice":"4999",
+		"newprice":"2899",
+		"img":"//eshop.dell-brand.com/uploads/202008/1597215774_4.jpg?image_L7_8",
+		"location":"product_details_page1.html"
 	}
 
 ]

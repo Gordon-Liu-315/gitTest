@@ -158,13 +158,96 @@ define(["jquery"],function($){
 					$(".search-allproducts-num").html(num);
 				})
 			})
-	}
-
+    }
+		//首页数据
+		function homeproducts(){
+			$.get("../data/data.json",function(arr){
+				var str = ``;
+				for(var i = 0; i < arr.length; i++){
+					if(i < 28){
+						str +=
+					`
+				<div id = "product-zone">
+					<a href="#" id = "product-zone-a"><img src="${arr[i].img}" alt=""></a>
+					<p>${arr[i].name}</p>
+					<b>${arr[i].style}</b>
+					<span>ins 15-7500-R2645B</span>
+					<span>${arr[i].type}</span>
+					<div>
+						<p><del>${arr[i].oldprice}</del></p>
+						<p>${arr[i].newprice}</p>
+						<a href="${arr[i].location}" class="buttonDetails" id = "${arr[i].id}">立即购买</a>
+					</div>
+				</div>
+					`
+					}
+					if(i >= 28 && i < 40){
+						str +=
+						`
+						<div id = "displayZone">
+							<a href="#" id = "displayZone-a"><img src="${arr[i].img}" alt=""></a>
+							<b>${arr[i].name}</b>
+							<div>
+								<p><del>${arr[i].oldprice}</del></p>
+								<p>${arr[i].newprice}</p>
+								<a href="#" class="buttonDetails" id="${arr[i].id}">立即购买</a>
+							</div>
+						</div>
+						`
+					}
+					if((i + 1) / 4 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/hotZone.png" alt=""></a>
+						`
+					}
+					if((i + 1) / 12 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/XPSZone.png" alt=""></a>
+						`
+					}
+					if((i + 1) / 16 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/gameZone.png" alt=""></a>
+						`
+					}
+					if((i + 1) / 20 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/UItrabookZone.png" alt=""></a>
+						`
+					}
+					if((i + 1) / 24 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/ETZone.png" alt=""></a>
+						`
+					}
+					if((i + 1) / 28 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/displayZone.png" alt=""></a>
+						`
+					}
+					if((i + 1) / 32 == 1){
+						str +=
+						`
+						<a href="#" id = "newZone-center-img"><img src="images/partsZone.png" alt=""></a>
+						`
+					}
+				}
+				$("#product").html(str);
+				
+			})
+		}
     return {
-      fade:fade,
-      selectCard:selectCard,
-			slideshow:slideshow,
-      sidewindow:sidewindow,
-			homedata:homedata,
+         fade:fade,
+         selectCard:selectCard,
+	    slideshow:slideshow,
+         sidewindow:sidewindow,
+        homedata:homedata,
+				homeproducts:homeproducts,
     }
 })

@@ -904,13 +904,16 @@ body{
 		}
 		.details-cen-btn{
 			margin-top:20px;
-			button:first-child{
-				width:170px;
-				height:40px;
-				border:none;
-				background:#56a025;
-				color:white;
-				cursor:pointer;
+			display:flex;
+			form{
+				button:first-child{
+					width:170px;
+					height:40px;
+					border:none;
+					background:#56a025;
+					color:white;
+					cursor:pointer;
+				}
 			}
 			button:last-child{
 				width:170px;

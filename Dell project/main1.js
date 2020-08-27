@@ -1,0 +1,23 @@
+require.config({
+    paths:{
+        jquery:"jquery-1.11.3",
+        "jquery-cookie":"jquery.cookie",
+        details2:"product_details_page2",
+    },
+    shim:{
+        "jquery-cookie":["jquery"],
+    }
+})
+require(["details2"],function(details2){
+    
+    details2.fade();
+    details2.selectCard();
+    details2.sidewindow();
+    details2.changeLevel();
+    details2.bigglass();
+    details2.allocation();
+    details2.pay();
+    details2.help();
+    details2.homedata();
+    details2.cookie1();
+})

@@ -816,8 +816,9 @@ body {
         justify-content: center;
         align-items: center; }
     #details #details-cen .details-cen-btn {
-      margin-top: 20px; }
-      #details #details-cen .details-cen-btn button:first-child {
+      margin-top: 20px;
+      display: flex; }
+      #details #details-cen .details-cen-btn form button:first-child {
         width: 170px;
         height: 40px;
         border: none;

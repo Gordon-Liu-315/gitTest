@@ -100,7 +100,6 @@ define(["jquery","jquery-cookie"],function($){
             mousemove:function(e){
                 var l = e.pageX - box.offset().left - 95;
                 var t = e.pageY - box.offset().top - 95;
-                console.log(box.offset().top);
                 l = Math.min(l,190);
                 l = Math.max(l,0);
                 t = Math.min(t,190);
@@ -199,7 +198,77 @@ define(["jquery","jquery-cookie"],function($){
 					$(".search-allproducts-num").html(num);
 				})
 			})
-	}
+    }
+    //存储本地信息1
+    function cookie1(){
+        var cart = $("details-cen-btn-cart");
+        var sub = $(".details-cen-count-subtract");
+        var plus = $(".details-cen-count-plus");
+        var num = $(".details-cen-count-number");
+        $(".details-cen-btn").on("click",cart,function(){
+            $.get("../data/data.json",function(arr){
+                var first = $.cookie("notebook") == null ? true : false;
+                var id = arr[1].id;
+                if(first){
+                    var data = [{id:id,num:1}];
+                    $.cookie("notebook",JSON.stringify(data),{expires:7});
+                }else{
+                    var cookieArr = JSON.parse($.cookie("notebook"));
+                    var same = false;
+                    for(var i = 0; i < cookieArr.length; i++){
+                        if(cookieArr[i].id == id){
+                            cookieArr[i].num++;
+                            same = true;
+                        }
+                    }
+                    if(!same){
+                        var obj = {id:id,num:1};
+                        //将数据插入到数据中
+                        cookieArr.push(obj);
+                    }
+                    $.cookie("notebook",JSON.stringify(cookieArr),{expires:7});
+                }
+            })
+            alert("商品添加成功");
+        })
+        var allnum = 0;
+        sub.click(function(){
+            $.get("../data/data.json",function(arr){
+                var cookieArr =  JSON.parse($.cookie("notebook"))
+                var id = arr[1].id;
+                for(var k = 0;k < cookieArr.length; k++){
+                    if(cookieArr[k].id == id){
+                        cookieArr[k].num--;
+                        if(cookieArr[k].num == 0){
+                            alert("没有此商品，请添加");
+                        }
+                    }
+                }
+                $.cookie("notebook",JSON.stringify(cookieArr),{expires:7});
+            })
+            allnum--
+            if(num.html() == 0){
+                alert("请添加此商品");
+                allnum = 0;
+            }
+            num.html(allnum);
+        })
+
+        plus.click(function(){
+            $.get("../data/data.json",function(arr){
+                var cookieArr =  JSON.parse($.cookie("notebook"))
+                var id = arr[1].id;
+                for(var l = 0;l < cookieArr.length; l++){
+                    if(cookieArr[l].id == id){
+                        cookieArr[l].num++;
+                    }
+                }
+                $.cookie("notebook",JSON.stringify(cookieArr),{expires:7});
+                allnum++
+                num.html(allnum);
+            })
+        })
+    }
     return{
         fade:fade,
         selectCard:selectCard,
@@ -210,5 +279,7 @@ define(["jquery","jquery-cookie"],function($){
 		pay:pay,
         help:help,
         homedata:homedata,
+        cookie1:cookie1,
+
     }
 })

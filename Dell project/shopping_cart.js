@@ -121,11 +121,126 @@ define(["jquery","jquery-cookie"],function($){
                     })
                 })
         }
-        
+        //购物车商品
+        function shopping(){
+						var cookieStr = $.cookie("notebook");
+						if(!cookieStr){
+								$("#nullproduct").css("display","block");
+						}else{
+							$("#nullproduct").css("display","none");
+						}
+						produc();
+						//给页面加数据
+						function produc(){
+							//判断是否有商品
+							var cookieStr = $.cookie("notebook");
+							if(!cookieStr){
+								return;
+							}
+							$.get("../data/data.json",function(arr){
+								var cookieArr = JSON.parse(cookieStr);
+								var newArr = [];
+								for(var i = 0; i < cookieArr.length; i++){
+									for(var j = 0; j < arr.length; j++){
+										if(arr[j].id == cookieArr[i].id){
+											arr[j].num = cookieArr[i].num;
+											newArr.push(arr[j]);
+											break;
+										}
+									}
+								}
+								if(!newArr){
+									$("#nullproduct").css("display","block");
+								}
+								var str = ``;
+								for(var k = 0; k < newArr.length; k++){
+									str += 
+									`
+									<ul id = "products-con-ul">
+										<li><input class="products-con-ul-inp" type="checkbox" id = "${newArr[k].id}"><a href=""><img src="${newArr[k].img}" alt=""></a></li>
+										<li><a href=""> ${newArr[k].style}</a></li>
+										<li>${newArr[k].type}</li>
+										<li><button class="products-con-ul-sub">-</button><p class="products-con-ul-p">${newArr[k].num}</p><button class="products-con-ul-plus">+</button></li>
+										<li><p class = "products-con-ul-mon">${newArr[k].oldprice}</p><p>折扣:</p></li>
+										<li><p class = "products-con-ul-mon">${newArr[k].oldprice}</p><p>${Math.abs(newArr[k].newprice - newArr[k].oldprice)}</p></li>
+										<li><b class = "products-con-ul-remove">删除</b></li>
+									</ul>
+									<h3>小计：<span>${newArr[k].newprice * newArr[k].num}</span></h2>
+									`
+								}
+								$("#products-con").html(str);
+
+								//总金额合计
+								var allmoney = $("#money h2 span");
+								var allinp = $("#products-con").find(".products-con-ul-inp");		
+								var allnum = 0;	
+								//全选					
+								$("#money").on("click","#money-allbtn",function(){
+									allnum = 0;
+									for(var l = 0; l < newArr.length; l++){
+										 allnum += newArr[l].num * newArr[l].newprice;
+									}
+									allmoney.html(allnum);
+									for(var m = 0; m < allinp.length; m++){
+										allinp[m].checked = true;
+									}
+								});
+								//全不选
+								$("#money").on("click","#money-notallbtn",function(){
+									for(var m = 0; m < allinp.length; m++){
+										allinp[m].checked = false;
+									}
+									allmoney.html(0);
+								})
+								//单选
+								$("#products-con").on("click","input",function(){
+									allnum = 0;
+									for(var n = 0; n < allinp.length; n++){
+										for(var p = 0; p < newArr.length; p++){
+											if(allinp[n].checked && allinp[n].id == newArr[p].id){
+												allnum += newArr[p].num * newArr[p].newprice;
+											}
+									  }
+									}
+									allmoney.html(allnum);
+								})
+							})
+						}
+						//加减数量
+						$("#products-con").on("click","button",function(){
+							var cookieArr = JSON.parse($.cookie("notebook"));
+							var id = $(this).parentsUntil("#products-con-ul").prevAll().find(".products-con-ul-inp").attr("id");
+							var index = cookieArr.findIndex(item => item.id == id);
+							console.log(index)
+							if(this.innerHTML == "+"){
+                cookieArr[index].num++;
+							}
+							if(this.innerHTML == "-"){
+									cookieArr[index].num == 1 ? alert("!已是最后一件商品") : cookieArr[index].num--;
+							}
+							$(this).siblings(".products-con-ul-p").html(cookieArr[index].num);
+							$.cookie("notebook",JSON.stringify(cookieArr),{expires:7});
+							produc();
+						})
+					//删除商品
+					$("#products-con").on("click","b",function(){
+						var cookieArr = JSON.parse($.cookie("notebook"));
+						var id = $(this).parentsUntil("#products-con-ul").prevAll().find(".products-con-ul-inp").remove().attr("id");
+						var index = cookieArr.findIndex(item => item.id == id);
+						cookieArr.splice(index,1);
+						if(cookieArr.length){	
+							$.cookie("notebook",JSON.stringify(cookieArr),{expires:7});
+						}else{
+							$.cookie("notebook",null);
+						}
+						produc();
+					})
+        }
         return {
             fade:fade,
             selectCard:selectCard,
             sidewindow:sidewindow,
-			homedata:homedata,
+            homedata:homedata,
+            shopping:shopping,
         }
 })
