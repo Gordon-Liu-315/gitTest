@@ -1,6 +1,5 @@
 //编译gulp任务
 const gulp = require("gulp");
-
 //处理html
 const htmlmin = require("gulp-htmlmin");
 gulp.task("copy-html",function(){
@@ -12,7 +11,6 @@ gulp.task("copy-html",function(){
     .pipe(gulp.dest("dist/"))
     .pipe(connect.reload());
 })
-
 //处理scss
 const scss = require("gulp-sass");
 const minifycss = require("gulp-minify-css");
@@ -44,28 +42,24 @@ gulp.task("shopping-cart",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
-
 //处理js
 gulp.task("scripts",function(){
     return gulp.src(["*.js","!gulpfile.js"])
     .pipe(gulp.dest("dist/js"))
     .pipe(connect.reload());
 })
-
 //处理图片
 gulp.task("images",function(){
     return gulp.src("*.{png,jpg}")
     .pipe(gulp.dest("dist/images"))
     .pipe(connect.reload());
 })
-
 //处理数据
 gulp.task("data",function(){
     return gulp.src(["*.json","!package.json"])
     .pipe(gulp.dest("dist/data"))
     .pipe(connect.reload());
 })
-
 gulp.task("build",["copy-html","home-page","product-details-page","shopping-cart","scripts","images","data"],function(){
     console.log("项目搭建成功");
 })

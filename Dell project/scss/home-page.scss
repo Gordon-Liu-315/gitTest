@@ -1,8 +1,5 @@
 @import "mixin";
 @import "reset";
-body{
-	background: #fff;;
-}
 /*header*/
 #header{
 	/*header-top*/
@@ -57,8 +54,8 @@ body{
 				font-size:12px;
 				color:#444444;
 				position:absolute;
-				bottom:15px;
-				left:20px;
+				bottom:10px;
+				left:18px;
 			}
 		}
 		a{
@@ -84,9 +81,9 @@ body{
 				a{
 					display:block;
 					height:38px;
-					font-size:14px;
+					font-size:12px;
 					color:#fff;
-					padding:0 19px;
+					padding:0 23px;
 					line-height:38px;
 					&:hover{
 						background:#fff;
@@ -488,15 +485,14 @@ body{
 }
 /*banner*/
 #banner{
-	margin:0 auto;
-	width:1519px;
+	width:1920px;
 	height:490px;
 	position:relative;
 	overflow:hidden;
 	#banner-ul-img{
 		position:absolute;
 		top:0;
-		left:-200px;
+		left:0;
 		display:flex;
 		li{
 			float:left;
@@ -890,7 +886,7 @@ body{
 }
 /*register*/
 #register{
-	z-index:1000;
+	z-index:10000;
 	width:650px;
 	height:400px;
 	position:fixed;
@@ -900,6 +896,7 @@ body{
 	left:0;
 	margin:auto;
 	background:#fff;
+	display:none;
 	#register-img{
 		width:310px;
 		height:400px;
@@ -939,33 +936,294 @@ body{
 					position:absolute;
 					top:5px;
 					right:5px;
+					cursor:pointer;
 				}
 			}
+			//手机号登录页面
 			#register-login-login{
+				padding:20px 0;
 				width:340px;
-				height:200px;
+				height:220px;
 				display:flex;
 				justify-content: center;
-				align-items:center;
+				align-items:space-between;
 				flex-flow: wrap;
+				// display:none;
 				.register-login-login-phone{
 					width:280px;
-					height:35px;
-					outline:none;
+					height:30px;
 				}
-				#register-login-login-block{
+				#register-login-login-string{
 					width:280px;
-					height:35px;
+					height:16px;
+					font-size:12px;
+					line-height:16px;
+					color:#ce1126;
+					display:none;
+				}
+				.register-login-login-block{
+					width:284px;
+					height:30px;
 					border:1px solid #999;
-					i{
-						width:35px;
+					position:relative;
+					background:rgb(213, 213, 213);
+					#register-login-login-block-green{
+						height:30px;
+						width:0;
+						background:rgb(120, 208, 46);
+					}
+					span{
+						font-size:10px;
+						margin-left:90px;
+						position:absolute;
+						top:10px;
+					}
+					.register-login-login-block-block{
+						position:absolute;
+						left:0px;
+						top:-1px;
+						border:1px solid #999;
+						background:white;
+						height:30px;
+						width:30px;
+						display:flex;
+						justify-content: center;
+						align-items:center;
+						z-index:100;
+						cursor:pointer;
+						i{
+							font-size:10px;
+							
+						}
+						i:nth-of-type(2){
+							display:none;
+							color:rgb(120, 208, 46);
+						}
+					}
+				}
+				#register-login-login-yard{
+					width:286px;
+					height:35px;
+					.register-login-login-yard-num{
+						width:170px;
+						height:30px;
+						margin-right:7px;
+					}
+					.register-login-login-yard-verify{
+						width:100px;
 						height:35px;
+						background:#0085c3;
+						border:none;
+						cursor:pointer;
+					}
+				}
+				#register-login-login-login{
+					width:287px;
+					height:35px;
+					border:none;
+					background:#0085c3;
+					color:white;
+					cursor:pointer;
+				}
+				#register-login-login-forget{
+					display:flex;
+					align-items:center;
+					#register-login-login-forget-p1{
+						width:100px;
+						height:20px;
+						font-size:14px;
+						color:#0085c3;
+						cursor:pointer;
+					}
+					#register-login-login-forget-p2{
+						height:20px;
+						width:60px;
+						font-size:14px;
+						color:#0085c3;
+						cursor:pointer;
+						margin:0 35px;
+					}
+					#register-login-login-forget-p3{
+						height:20px;
+						width:70px;
+						cursor:pointer;
+						font-size:14px;
+					}
+				}
+			}
+			//账号登录页面
+			#register-logon{
+				width:340px;
+				height:220px;
+				padding:20px 0;
+				display:flex;
+				justify-content: center;
+				align-items:space-between;
+				flex-flow: wrap;
+				display:none;
+				#register-logon-inp1{
+					width:280px;
+					height:30px;
+				}
+				#register-logon-inp2{
+					width:280px;
+					height:30px;
+				}
+				#register-logon-span1{
+					color:#ce1126;
+					font-size:12px;
+					height:0;
+					display:none;
+				}
+				#register-logon-span2{
+					color:rgb(120, 208, 46);
+					font-size:12px;
+					height:0;
+					display:block;
+					width:135px;
+					text-align:center;
+				}
+				#register-logon-btn{
+					width:286px;
+					height:36px;
+					border:none;
+					color:white;
+					background:#0085c3;
+				}
+				#register-logon-ops{
+					display:flex;
+					align-items:center;
+					#register-logon-p1{
+						width:100px;
+						height:20px;
+						font-size:14px;
+						color:#0085c3;
+						cursor:pointer;
+					}
+					#register-logon-p2{
+						height:20px;
+						width:60px;
+						font-size:14px;
+						color:#0085c3;
+						cursor:pointer;
+						margin:0 35px;
+					}
+					#register-logon-p3{
+						height:20px;
+						width:70px;
+						cursor:pointer;
+						font-size:14px;
+					}
+				}
+			}
+			//注册页面
+			#register-register{
+				width:340px;
+				height:220px;
+				padding:20px 0;
+				display:flex;
+				justify-content: center;
+				align-items:space-between;
+				flex-flow: wrap;
+				display:none;
+				#register-register-inp1{
+					width:280px;
+					height:30px;
+				}
+				#register-register-inp2{
+					width:280px;
+					height:30px;
+				}
+				#register-register-inp3{
+					width:280px;
+					height:30px;
+				}
+				#register-register-span1{
+					color:#ce1126;
+					font-size:10px;
+					display:none;
+				}
+				#register-register-span2{
+					color:rgb(120, 208, 46);
+					font-size:10px;
+					display:block;
+					text-align:center;
+					width:70px;
+				}
+				#register-register-btn{
+					width:286px;
+					height:36px;
+					border:none;
+					color:white;
+					background:#0085c3;
+				}
+				#register-register-ops{
+					display:flex;
+					align-items:center;
+					#register-register-p1{
+						width:100px;
+						height:20px;
+						font-size:14px;
+						color:#0085c3;
+						cursor:pointer;
+					}
+					#register-register-p2{
+						width:85px;
+						height:20px;
+						font-size:14px;
+						color:#0085c3;
+						cursor:pointer;
+						margin:0 18px;
+					}
+					#register-register-p3{
+						width:70px;
+						height:20px;
+						font-size:14px;
+						cursor:pointer;
 					}
 				}
 			}
 			#register-login-foot{
 				width:340px;
 				height:70px;
+				display:flex;
+				justify-content:space-around;
+				div{
+					width:100px;
+					display:flex;
+					flex-flow:column;
+					justify-content: center;
+					align-items:center;
+					font-size:12px;
+					cursor:pointer;
+					&:hover{
+						background:rgba(153, 153, 153, 0.217);
+					}
+					i{
+						font-size:30px;
+						margin-bottom:8px;
+						color:#0085c342;
+					}
+				}
+				
 			}
 		}
+}
+/*masking*/
+#htmlbody{
+	width:100%;
+	height:100%;
+	z-index:1000;
+	position:fixed!important;
+	position:absolute; 
+	left:0px; 
+	top:0px; 
+	width:100%; 
+	height:100%; 
+	background:#000; 
+	filter: alpha(opacity=45); 
+	opacity: 0.45; 
+	-moz-opacity: 0.45; 
+	-khtml-opacity: 0.45;
+	display:none;
 }

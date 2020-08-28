@@ -17,6 +17,11 @@ require(["home","details1","shopping"],function(home,details1,shopping){
     home.sidewindow();
     home.homedata();
     home.homeproducts();
+    home.dragslider();
+    home.phone();
+    home.loginbtn();
+    home.registerdata();
+    home.logindata();
 
     details1.fade();
     details1.selectCard();

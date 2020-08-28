@@ -128,7 +128,21 @@ define(["jquery","jquery-cookie"],function($){
 								$("#nullproduct").css("display","block");
 						}else{
 							$("#nullproduct").css("display","none");
-						}
+                        }
+                        if($("#nullproduct").css("display") == "block"){
+                            var ti = $("#timer")
+                            var t=5;
+                                var timer = setInterval(function(){
+                                    t--;
+                                    ti.html(t);
+                                    if(t <= 0 && t >= -1){
+                                        $(window).attr('location','../home_page.html');
+                                    }
+                                }, 1000)	
+                                if(t <= 0 && t >= -1){
+                                    clearInterval(timer);
+                                }
+                        }
 						produc();
 						//给页面加数据
 						function produc(){
@@ -231,7 +245,8 @@ define(["jquery","jquery-cookie"],function($){
 						if(cookieArr.length){	
 							$.cookie("notebook",JSON.stringify(cookieArr),{expires:7});
 						}else{
-							$.cookie("notebook",null);
+                            $.cookie("notebook",null);
+                            window.location.reload();  
 						}
 						produc();
 					})

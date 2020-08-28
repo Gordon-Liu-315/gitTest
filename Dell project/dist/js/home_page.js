@@ -89,10 +89,10 @@ define(["jquery"],function($){
             if(inow == lis.size()){
                 lis.eq(0).addClass("banner-ul-point-active");
             }
-            ul.animate({left:-200 + (-1920 * inow)},500,function(){
+            ul.animate({left:-1920 * inow},500,function(){
                 if(inow == lis.size()){
                     inow = 0;
-                    ul.css("left",-200);
+                    ul.css("left",0);
                 }
             })
         }
@@ -159,8 +159,8 @@ define(["jquery"],function($){
 				})
 			})
     }
-		//首页数据
-		function homeproducts(){
+	//首页数据
+	function homeproducts(){
 			$.get("../data/data.json",function(arr){
 				var str = ``;
 				for(var i = 0; i < arr.length; i++){
@@ -241,13 +241,210 @@ define(["jquery"],function($){
 				$("#product").html(str);
 				
 			})
-		}
+	}
+	//登录滑块拖动
+	function dragslider(){
+		var box = $(".register-login-login-block");
+		var icon1 = $(".register-login-login-block-start");
+		var icon2 = $(".register-login-login-block-end");
+		var green= $("#register-login-login-block-green");
+		var block = $(".register-login-login-block-block");
+		var span = box.find("span");
+		var verify = $(".register-login-login-yard-verify");
+		verify.attr("disabled",true)
+		block.on("mousedown",function(ev){
+			var offsetX = ev.clientX - block.offset().left;
+			$(document).on("mousemove",function(ev){
+				var l = ev.clientX - offsetX - box.offset().left;
+				l = Math.min(254,l);
+        l = Math.max(0, l);
+				block.css({
+					left:l
+				});
+				green.css({
+					width:l
+				})
+			})
+			$(document).on("mouseup",function(){
+				
+				$(document).off("mousemove");
+				var l = parseInt(block.css("left"));
+				console.log(l)
+				if(l < 250){
+					block.stop(true).animate({"left":0},500)
+					green.stop(true).animate({"width":0},500)
+					span.html("请按住滑块，拖至最右边");
+					verify.attr("disabled",true);
+				}
+				if(l >= 250){
+					icon1.css("display","none");
+					icon2.css("display","block");
+					block.stop(true).animate({"left":254},500)
+					green.stop(true).animate({"width":254},500)
+					span.html("验证中...")
+					setTimeout(function(){
+						span.html("验证通过");
+					},2000)
+					$(document).off("mouseup")
+					verify.attr("disabled",false)
+				}else{
+					icon1.css("display","block");
+					icon2.css("display","none");
+				}
+				
+			})
+		})
+	}
+	//手机号正则验证
+	function phone(){
+		var inp = $(".register-login-login-phone");
+		var str = $("#register-login-login-string");
+		var regexp = /^[1][3,4,5,7,8][0-9]{9}$/;
+		inp.on("focus",function(){
+			str.css("display","none")
+		})
+		inp.on("blur",function(){
+			var value = $(".register-login-login-phone").val();
+			console.log(value)
+			if(regexp.test(value) == false){
+				str.css("display","block");
+			}else if(regexp.test(value) == true){
+				str.css("display","none");
+			}
+		})
+
+		
+	}
+	//点击登录各种按钮的跳转
+	function loginbtn(){
+		var all = $("#register");
+		var masking = $("#htmlbody");
+		var open = $(".header-top-a");
+		var close = $(".register-login-title-icon");
+		var phone = $("#register-login-login");
+		var phoneP1 = $("#register-login-login-forget-p1");
+		var phoneP2 = $("#register-login-login-forget-p2");
+		var login = $("#register-logon");
+		var loginP1 = $("#register-logon-p1");
+		var loginP2 = $("#register-logon-p2");
+		var register = $("#register-register");
+		var registerP1 = $("#register-register-p1");
+		var registerP2 = $("#register-register-p2");
+		//打开关闭登录页面
+		open.click(function(){
+			all.css("display","block");
+			masking.css("display","block");
+		})
+		close.click(function(){
+			all.css("display","none");
+			masking.css("display","none");
+		})
+		//手机号登录页面的其他跳转
+		phoneP1.click(function(){
+			phone.css("display","none");
+			login.css("display","flex");
+			register.css("display","none");
+		})
+		phoneP2.click(function(){
+			phone.css("display","none");
+			login.css("display","none");
+			register.css("display","flex");
+		})
+		//账号登录页面的其他跳转
+		loginP1.click(function(){
+			phone.css("display","flex");
+			login.css("display","none");
+			register.css("display","none");
+		})
+		loginP2.click(function(){
+			phone.css("display","none");
+			login.css("display","none");
+			register.css("display","flex");
+		})
+		//注册页面的其他跳转
+		registerP1.click(function(){
+			phone.css("display","flex");
+			login.css("display","none");
+			register.css("display","none");
+		})
+		registerP2.click(function(){
+			phone.css("display","none");
+			login.css("display","flex");
+			register.css("display","none");
+		})
+	}
+	//注册提交数据给后台
+	function registerdata(){
+		var btn = $("#register-register-btn");
+		btn.click(function(){
+			var inp1 = $("#register-register-inp1").val();
+			var inp2 = $("#register-register-inp2").val();
+			var inp3 = $("#register-register-inp3").val();
+			var span = $("#register-register").find("span");
+			$.post("dellregister.php",
+			{
+				username:inp1,
+				password:inp2,
+				repassword:inp3,
+				createtime:new Date().getTime(),
+			},
+			function(data){
+				var arr = JSON.parse(data);
+				if(arr.code){
+					span.html(arr.msg);
+					span.attr("id","register-register-span1");
+					span.css("display","block");
+				}else{
+					span.html(arr.msg);
+					span.attr("id","register-register-span2");
+				}
+				
+			})
+		})
+	}
+	//登录提交数据给后台
+	function logindata(){
+	
+		var btn = $("#register-logon-btn");
+		btn.click(function(){
+			var inp1 = $("#register-logon-inp1").val();
+			var inp2 = $("#register-logon-inp2").val();
+			var span = $("#register-logon").find("span");
+			$.post("delllogin.php",
+			{
+				username:inp1,
+				password:inp2,
+			},function(data){
+				var arr = JSON.parse(data);
+				if(arr.code){
+					span.html(arr.msg);
+					span.attr("id","register-logon-span1");
+					span.css("display","block");
+				}else{
+					span.html(arr.msg);
+					span.attr("id","register-logon-span2");
+					setInterval(function(){
+						var all = $("#register");
+						var masking = $("#htmlbody");
+						masking.css("display","none");
+						all.css("display","none");
+					},2000);
+
+				}
+			})
+		})
+	}
     return {
-         fade:fade,
-         selectCard:selectCard,
+      fade:fade,
+      selectCard:selectCard,
 	    slideshow:slideshow,
-         sidewindow:sidewindow,
-        homedata:homedata,
-				homeproducts:homeproducts,
+      sidewindow:sidewindow,
+      homedata:homedata,
+			homeproducts:homeproducts,
+			dragslider:dragslider,
+			phone:phone,
+			loginbtn:loginbtn,
+			registerdata:registerdata,
+			logindata:logindata,
     }
 })

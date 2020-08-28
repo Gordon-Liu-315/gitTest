@@ -230,14 +230,14 @@
 	<div id = "banner">
 		<ul id = "banner-ul-img">
 			<li><a href="#"><img src="//eshop.dell-brand.com/uploads/202008/1597933973_1.jpg?KV_1" alt=""></a></li>
-			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1597671183_ad.jpg?KV_1" alt=""></a></li>
+			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1598537170_ad.jpg?KV_1" alt=""></a></li>
 			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1597745330_ad.jpg?KV_2" alt=""></a></li>
 			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1597412971_ad.jpg?KV_3" alt=""></a></li>
 			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1597413003_ad.jpg?KV_4" alt=""></a></li>
 			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1598016949_ad.jpg?KV_6" alt=""></a></li>
 			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1598020283_ad.jpg?KV_7" alt=""></a></li>
 			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1597058045_ad.jpg?KV_8" alt=""></a></li>
-			<li><a href="#"><img src="//eshop.dell-brand.com/uploads/202008/1597933973_1.jpg?KV_1" alt=""></a></li>
+			<li><a href="#"><img src="//eshop.dell-brand.com/../uploads/202008/1598537170_ad.jpg?KV_1" alt=""></a></li>
 		</ul>
 		<ol id = "banner-ul-point">
 			<li class="banner-ul-point-active"></li>
@@ -404,30 +404,70 @@
 		<div id = "register">
 			<div id = "register-img"><img  id = "register-img-img" src="images/register.jpg" alt=""></div>
 			<div id = "register-login">
+				<!-- 头部LOGO -->
 				<div id = "register-login-title">
 					<img class = "register-login-title-img" src="images/LOGO.png" alt="">
 					<h2>欢迎登录/注册</h2>
-					<i class = "iconfont">&#xe635;</i>
+					<i class = "iconfont register-login-title-icon">&#xe635;</i>
 				</div>
+				<!-- 手机号登录页面 -->
 				<div id = "register-login-login">
 					<input class = "register-login-login-phone" oninput="value=value.replace(/[^\d]/g,'')" type="text" placeholder = "请输入手机号">
-					<div id= "register-login-login-block"><i class = "register-login-login-block-mark iconfont">&#xe61e;</i><i class="iconfont">&#xe65c;</i></div>
+					<p id = "register-login-login-string">!请输入有效的手机号</p>
+					<div class= "register-login-login-block">
+						<div id = "register-login-login-block-green"></div>
+						<span>请按住滑块，拖至最右边</span>
+						<div class = "register-login-login-block-block">
+							<i class = "register-login-login-block-start iconfont">&#xe61e;</i>
+							<i class="register-login-login-block-end iconfont">&#xe65c;</i>
+						</div>
+					</div>
 					<div id = "register-login-login-yard">
 						<input class = "register-login-login-yard-num" oninput="value=value.replace(/[^\d]/g,'')" type="text" placeholder = "请输入验证码">
 						<button class="register-login-login-yard-verify">获取验证码</button>
 					</div>
 					<button id = "register-login-login-login">登录/注册</button>
 					<div id = "register-login-login-forget">
-						<p>账号密码登录</p>
-						<p>忘记密码？</p>
+						<p id= "register-login-login-forget-p1">账号密码登录</p>
+						<p id= "register-login-login-forget-p2">注册账号</p>
+						<p id= "register-login-login-forget-p3">忘记密码？</p>
 					</div>
 				</div>
+				<!-- 账号登录页面 -->
+				<div id = "register-logon">
+					<input id = "register-logon-inp1" type="text" placeholder = "请输入您的账号">
+					<input id = "register-logon-inp2" type="text" placeholder = "请输入您的密码">
+					<span id = "register-logon-span1">！你的账号或密码输入有误</span>
+					<button id = "register-logon-btn" >登录</button>
+					<div id = "register-logon-ops">
+						<p id = "register-logon-p1">手机验证码登录</p>
+						<p id = "register-logon-p2">注册账号</p>
+						<p id = "register-logon-p3">忘记密码？</p>
+					</div>
+				</div>
+				<!-- 注册页面 -->
+				<div id = "register-register">
+					<input id= "register-register-inp1" type="text" placeholder = "请注册您的新账号">
+					<input id= "register-register-inp2" type="text" placeholder = "请设置您的密码">
+					<input id= "register-register-inp3" type="text" placeholder = "请确认您的密码">
+					<span id = "register-register-span1">!两次密码不一致，请重新输入</span>
+					<button id = "register-register-btn">注册</button>
+					<div id = "register-register-ops">
+						<p id = "register-register-p1">手机号验证登录</p>
+						<p id = "register-register-p2">账号密码登录</p>
+						<p id = "register-register-p3">忘记密码？</p>
+					</div>
+				</div>
+				<!-- 底部图标 -->
 				<div id = "register-login-foot">
-					<div><i>&#xe61a;</i>QQ登录</div>
-					<div><i>&#xe616;</i>支付宝登录</div>
-					<div><i>&#xe606;</i>微信登录</div>
+					<div><i class="iconfont">&#xe61a;</i>QQ登录</div>
+					<div><i class="iconfont">&#xe616;</i>支付宝登录</div>
+					<div><i class="iconfont">&#xe606;</i>微信登录</div>
 				</div>
 			</div>
 		</div>
+		<!-- masking -->
+		<div id = "htmlbody">
+	</div>
 </body>
 </html>
