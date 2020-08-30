@@ -1,4 +1,4 @@
-define(["jquery"],function($){
+define(["jquery","jquery-cookie"],function($){
     //滑入淡入淡出
     function fade(){
         var lis = $("#nav-center-ul li");
@@ -174,9 +174,9 @@ define(["jquery"],function($){
 					<span>ins 15-7500-R2645B</span>
 					<span>${arr[i].type}</span>
 					<div>
-						<p><del>${arr[i].oldprice}</del></p>
-						<p>${arr[i].newprice}</p>
-						<a href="${arr[i].location}" class="buttonDetails" id = "${arr[i].id}">立即购买</a>
+						<p><del>￥${arr[i].oldprice}</del></p>
+						<p>￥${arr[i].newprice}</p>
+						<a href="#" class="buttonDetails" id = "${arr[i].id}">立即购买</a>
 					</div>
 				</div>
 					`
@@ -188,8 +188,8 @@ define(["jquery"],function($){
 							<a href="#" id = "displayZone-a"><img src="${arr[i].img}" alt=""></a>
 							<b>${arr[i].name}</b>
 							<div>
-								<p><del>${arr[i].oldprice}</del></p>
-								<p>${arr[i].newprice}</p>
+								<p><del>￥${arr[i].oldprice}</del></p>
+								<p>￥${arr[i].newprice}</p>
 								<a href="#" class="buttonDetails" id="${arr[i].id}">立即购买</a>
 							</div>
 						</div>
@@ -434,6 +434,22 @@ define(["jquery"],function($){
 			})
 		})
 	}
+	//各个商品添加本地存储
+	function allProducts(){
+		$("#product").on("click",".buttonDetails",function(){
+			var btnid = $(this).attr("id");
+			$(window).attr("location","../product_details_page.html");
+			var body = $("#productBody");
+			console.log(body)
+			$.get("../data/data.json",function(arr){
+				for(let i = 0; i < arr.length; i++){
+					if(btnid == arr[i].id){
+						$.cookie("productdata",`${arr[i].id}`);
+					}
+				}
+			})
+		});
+	}
     return {
       fade:fade,
       selectCard:selectCard,
@@ -446,5 +462,6 @@ define(["jquery"],function($){
 			loginbtn:loginbtn,
 			registerdata:registerdata,
 			logindata:logindata,
+			allProducts:allProducts,
     }
 })

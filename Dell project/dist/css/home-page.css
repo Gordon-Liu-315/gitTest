@@ -460,7 +460,7 @@ img {
 
 /*banner*/
 #banner {
-  width: 1920px;
+  width: 100%;
   height: 490px;
   position: relative;
   overflow: hidden; }
@@ -475,7 +475,7 @@ img {
       width: 1920px; }
       #banner #banner-ul-img li a img {
         height: 100%;
-        width: 1920px;
+        width: 100%;
         float: left; }
   #banner #banner-ul-point {
     width: 225px;
@@ -536,7 +536,7 @@ img {
   display: flex;
   flex-flow: wrap; }
   #product #product-zone {
-    height: 340px;
+    height: 350px;
     width: 255px;
     padding: 10px 14px;
     border: 1px solid #fff; }
@@ -548,15 +548,18 @@ img {
       font-size: 14px;
       color: #0085c3;
       height: 20px;
-      width: 255px;
+      width: 230px;
       line-height: 20px;
-      margin-top: 10px; }
+      margin-top: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
     #product #product-zone b {
+      display: block;
       font-size: 14px;
-      height: 30px;
       line-height: 30px;
       font-weight: bold;
-      width: 240px;
+      width: 220px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
@@ -576,7 +579,8 @@ img {
         font-weight: 500; }
       #product #product-zone div p {
         color: #ce1126;
-        font-size: 27px;
+        font-size: 26px;
+        height: 28px;
         font-weight: bold; }
       #product #product-zone div a {
         display: inline-block;
@@ -607,8 +611,8 @@ img {
         width: 100%;
         height: 100%; }
     #product #displayZone b {
+      display: block;
       font-size: 14px;
-      height: 30px;
       line-height: 30px;
       font-weight: bold;
       width: 240px;
@@ -624,7 +628,8 @@ img {
         font-weight: 500; }
       #product #displayZone div p {
         color: #ce1126;
-        font-size: 27px;
+        height: 28px;
+        font-size: 26px;
         font-weight: bold; }
       #product #displayZone div a {
         display: inline-block;
@@ -899,7 +904,7 @@ img {
           height: 30px;
           margin-right: 7px; }
         #register #register-login #register-login-login #register-login-login-yard .register-login-login-yard-verify {
-          width: 100px;
+          width: 95px;
           height: 35px;
           background: #0085c3;
           border: none;
